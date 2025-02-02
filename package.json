@@ -1,0 +1,17 @@
+{
+  "name": "msft-ally-driver",
+  "license": "MIT",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.12",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  }
+}
