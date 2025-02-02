@@ -1,12 +1,22 @@
 {
   "name": "msft-ally-driver",
+  "package-name": "msft-ally-driver",
+  "description": "This is a Microsoft driver for the Ally social authentication for AdonisJS",
+  "entry point": "msft_oauth.ts",
+  "test command": "",
+  "git repository": "https://github.com/noahdvaughn/msft-ally-driver",
+  "keywords": [
+    "AdonisJS",
+    "Ally"
+  ],
+  "author": "Noah Vaughn",
   "license": "MIT",
   "version": "0.0.1",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/msft_oauth.js",
+  "module": "dist/msft_oauth.mjs",
+  "types": "dist/msft_oauth.d.ts",
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup msft_oauth.ts --format cjs,esm --dts",
     "lint": "tsc"
   },
   "devDependencies": {
